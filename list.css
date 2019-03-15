@@ -1,0 +1,185 @@
+
+body{
+	padding-top: 80px;
+	background: #f5f4f3;
+}
+header{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	background: rgb(255,160,59);
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+header .head{
+	margin: auto;
+	margin-top: 15px;
+	width: 90%;
+	height: 60px;
+	position: relative;
+}
+header input{
+	width: 100%;
+	height: 50px;
+	float: left;
+	text-indent: 20px;
+	background: rgba(255,255,255,.2);
+	border: none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+::-webkit-input-placeholder{
+	letter-spacing: 1px;
+	font-family: "Comic Sans MS";
+	color: grey;
+}
+::-moz-input-placeholder{
+	letter-spacing: 1px;
+	font-family: "Comic Sans MS";
+	color: grey;
+}
+::-ms-input-placeholder{
+	letter-spacing: 1px;
+	font-family: "Comic Sans MS";
+	color: grey;
+}
+header button{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 1px;
+	z-index: 2;
+	border: none;
+	border-radius: 25px;
+	background: white;
+}
+header button i{
+	color: rgb(255,160,59);
+	font-size: 25px;
+}
+.container{
+	margin: auto;
+	width: 90%;
+	background: black;
+
+}
+ul.todo{
+	padding: 0;
+	width: 100%;
+	float: left;	
+}
+ul.todo li{ 
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 35px;
+	max-width: 100%;
+	min-height: 50px;
+	padding: 14px 80px 0 14px;
+	list-style-type: none;
+	background: white;
+	border-radius: 5px;
+	position: relative;
+	box-shadow: 0px 1px 2px #dcdcdc;
+	margin-bottom: 10px;
+}
+ul.todo li:last-of-type{
+	margin-bottom: 0px;
+}
+.btn{
+	width: 100px;
+	height: 50px;
+	top: 0;
+	padding-top: 5px;
+	right: 0;
+	border: none;
+	position: absolute;
+}
+.btn .button{
+	width: 48px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+	background: none;
+	position: relative;
+	overflow: hidden;
+}
+.btn .button:last-of-type:before{
+	content:'';
+	width: 1px;
+	height: 30px;
+	position: absolute;
+	top: 5px;
+	left: 0;
+	background: #ebebeb;
+}
+.remove:active i{
+	color: red;
+}
+.button i{
+	font-size: 30px;
+	color: #dcdcdc;
+	background: white;
+}
+.todo#completed .complete i{
+	color: rgb(255,160,59);
+}
+ul.todo#todo{
+	position: relative;
+	padding: 100px 0 0 0;
+}
+ul.todo#completed{
+	position: relative;
+	padding: 100px 0 0 0;
+}
+ul.todo#todo:not(:empty):before{
+	content:'Uncompleted tasks!';
+	width: 100%;
+	height: 1px;
+	top: 30px;
+	font-family: "Comic Sans MS";
+	font-size: 20px;
+	text-align: center;
+	color: rgb(255,160,59);
+	position: absolute;
+}
+ul.todo#completed:not(:empty):before{
+	content:'Completed tasks!';
+	width: 100%;
+	height: 1px;
+	top: 30px;
+	font-family: "Comic Sans MS";
+	font-size: 20px;
+	text-align: center;
+	color: rgb(255,160,59);
+	background: rgba(0,0,0,0);
+	position: absolute;
+}
+ul.todo#completed:empty:before{
+	content: '';
+	width: 100%;
+	height: 1px;
+	top: 30px;
+	background: #aaa;
+	position: absolute;
+}
+ul.todo#todo:empty:after{
+	content:'You have nothing to-do!';
+	margin-top: 20px;
+}
+ul.todo#completed:empty:after{
+	content:'You do not have any completed tasks!';
+}
+ul.todo#todo:after,
+ul.todo#completed:after{
+	width: 100%;
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	color: #aaa;
+}

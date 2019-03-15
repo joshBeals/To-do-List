@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>To-Do-List App</title>
+	<link rel="stylesheet" type="text/css" href="list.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+	<header>
+		<div class = "head">
+			<input type="text" placeholder="Enter an activity.." id="item">
+			<button id="add"><i class="fas fa-plus"></i></button>
+		</div>		
+	</header>
+	<div class="container">
+		<ul class="todo" id ="todo"></ul>
+		<ul class="todo" id ="completed"></ul>
+	</div>	
+
+	<script type="text/javascript" src="list.js"></script>
+</body>
+</html>
